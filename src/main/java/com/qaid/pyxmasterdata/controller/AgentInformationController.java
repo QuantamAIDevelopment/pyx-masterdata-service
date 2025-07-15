@@ -3,6 +3,7 @@ package com.qaid.pyxmasterdata.controller;
 import com.qaid.pyxmasterdata.models.dto.AgentInfoRequest;
 import com.qaid.pyxmasterdata.models.dto.AgentInfoResponse;
 import com.qaid.pyxmasterdata.service.AgentInformationService;
+import com.qaid.pyxmasterdata.service.serviceImpl.AgentInformationServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
