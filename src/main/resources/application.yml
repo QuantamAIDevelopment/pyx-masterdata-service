@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: pyx-masterdata
+  profiles:
+    active: local
