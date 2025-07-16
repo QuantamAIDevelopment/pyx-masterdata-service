@@ -3,15 +3,16 @@ package com.qaid.pyxmasterdata.controller;
 import com.qaid.pyxmasterdata.models.dto.AgentInfoRequest;
 import com.qaid.pyxmasterdata.models.dto.AgentInfoResponse;
 import com.qaid.pyxmasterdata.models.dto.AgentCardDetailResponse;
-import com.qaid.pyxmasterdata.models.dto.AgentCardResponse;
 import com.qaid.pyxmasterdata.service.AgentInformationService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
@@ -30,14 +31,16 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@WebMvcTest(AgentInformationController.class)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class AgentInformationControllerTest {
-    @MockBean
+    @Mock
     private AgentInformationService service;
 
     @InjectMocks
     private AgentInformationController controller;
 
+    @Autowired
     private MockMvc mockMvc;
 
     @BeforeEach

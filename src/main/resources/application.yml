@@ -3,3 +3,12 @@ spring:
     name: pyx-masterdata
   profiles:
     active: dev
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health # Restrict actuator endpoints
+      base-path: /actuator
+    endpoint:
+      health:
+        show-details: never # Hide details for security

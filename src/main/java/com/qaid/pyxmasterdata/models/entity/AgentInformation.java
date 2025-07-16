@@ -37,10 +37,13 @@ public class AgentInformation {
 
     private int reviews;
 
+    @Builder.Default
     private boolean isNew = false;
 
+    @Builder.Default
     private boolean isPremium = false;
 
+    @Builder.Default
     private boolean isActive = false;
 
     private String setupTime;
