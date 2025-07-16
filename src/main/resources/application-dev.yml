@@ -31,8 +31,6 @@ spring:
           batch_size: 50
           fetch_size: 50
           batch_versioned_data: true
-  profiles:
-    active: dev
   cloud:
     config:
       enabled: false
