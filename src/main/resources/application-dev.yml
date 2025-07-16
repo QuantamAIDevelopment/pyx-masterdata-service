@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://pyx-server.postgres.database.azure.com:5432/pyx_masterdata_db
-    username: uqtrdexquc
-    password: yfGQ2BhHfUsatY$A
+    url: jdbc:postgresql://pyx-masterdata-db.postgres.database.azure.com:5432/pyx_masterdata_db
+    username: pyxdbadmin
+    password: Qaid@2025
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
@@ -40,7 +40,7 @@ eureka:
 
 # CORS settings for dev
 cors:
-  allowed-origins: "https://marketplace-dev-react-fvc8fygrefhcfkch.australiaeast-01.azurewebsites.net/,http://localhost:5173,http://localhost:3000"
+  allowed-origins: "https://marketplace-dev-react-fvc8fygrefhcfkch.australiaeast-01.azurewebsites.net/,http://localhost:5173,http://localhost:5174,http://localhost:3000"
   allowed-methods: "GET,POST,PUT,PATCH,DELETE,OPTIONS"
   allowed-headers: "*"
   allow-credentials: true
