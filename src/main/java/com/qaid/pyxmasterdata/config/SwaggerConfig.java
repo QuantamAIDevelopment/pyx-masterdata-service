@@ -28,7 +28,7 @@ import org.springframework.context.annotation.Configuration;
         servers = {
                 @Server(url = "http://localhost:8080", description = "Local Development Server"),
                 @Server(url = "https://pxynetwork.com", description = "Production Server"),
-                @Server(url = "pyx-backend-dev-a2f6ajbebqdrfrb8.canadacentral-01.azurewebsites.net", description = "Azure Dev Web App")
+                @Server(url = "pyx-masterdata-serivce-gedha7bja3awbbey.canadacentral-01.azurewebsites.net", description = "Azure Dev Web App")
         }
 )
 public class SwaggerConfig {
