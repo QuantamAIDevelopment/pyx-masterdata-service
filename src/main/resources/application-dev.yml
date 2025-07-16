@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: ${AZURE_SQL_URL}
-    username: ${AZURE_SQL_USER}
-    password: ${AZURE_SQL_PASSWORD}
+    url: jdbc:postgresql://pyx-server.postgres.database.azure.com:5432/pyx_masterdata_db
+    username: uqtrdexquc
+    password: yfGQ2BhHfUsatY$A
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
